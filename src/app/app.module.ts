@@ -58,6 +58,7 @@ import { TratamientoGranosComponent } from './pages/plagas/tratamiento-granos/tr
 import { TratamientoTermitasComponent } from './pages/plagas/tratamiento-termitas/tratamiento-termitas.component';
 import { TratamientoEspecialComponent } from './pages/plagas/tratamiento-especial/tratamiento-especial.component';
 import { TrabajaNosotrosComponent } from './pages/trabaja-nosotros/trabaja-nosotros.component';
+import { TerminosCondicionesComponent } from './pages/terminos-condiciones/terminos-condiciones.component';
 
 
 @NgModule({
@@ -112,7 +113,8 @@ import { TrabajaNosotrosComponent } from './pages/trabaja-nosotros/trabaja-nosot
     TratamientoTermitasComponent,
     TratamientoEspecialComponent,
     TrabajaNosotrosComponent,
-    PreguntasFrecuentesComponent
+    PreguntasFrecuentesComponent,
+    TerminosCondicionesComponent
   ],
   imports: [
     BrowserModule,

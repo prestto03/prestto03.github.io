@@ -36,6 +36,7 @@ import { InstFinancierasComponent } from './pages/sectores/inst-financieras/inst
 import { OtrosSectoresComponent } from './pages/sectores/otros-sectores/otros-sectores.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FarmaciasComponent } from './pages/sectores/farmacias/farmacias.component';
+import { TerminosCondicionesComponent } from './pages/terminos-condiciones/terminos-condiciones.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch:'full' },
@@ -76,6 +77,7 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'trabaja-con-nosotros', component: TrabajaNosotrosComponent },
   { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent },
+  { path: 'terminos-y-condiciones', component: TerminosCondicionesComponent },
 
   { path: '**', component: InicioComponent}
   // { path: '**', component: PagenotfoundComponent}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CorreoService } from 'src/app/services/mails/correo.service';
+import { CorreoService } from '../../services/mails/correo.service';
 import Swal from 'sweetalert2';
 
 @Component({
