@@ -62,12 +62,8 @@
             <div class="mb-2 titulo-plagas">CONTROL DE PLAGAS</div>
             <p class="division-text">Nos preocupamos por mantener tu espacio libre de plagas, ya que éstas pueden representar una amenaza para tu salud y tu entorno.</p><br>
             <div class="d-flex justify-content-between align-content-center mt-3">
-              <a routerLink="/plagas">
-                <img src="assets/img/website/iconos/arrow-narrow-right-plagas.svg" class="img-fluid">
-              </a>
-              <a routerLink="/plagas">
-                <img src="assets/img/website/iconos/ECOVITALI_Division_Plagas.svg" width="70px" class="img-fluid">
-              </a>
+              <img src="assets/img/website/iconos/arrow-narrow-right-plagas.svg" class="img-fluid">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Plagas.svg" width="70px" class="img-fluid">
             </div>
           </div>
         </div>
@@ -82,12 +78,8 @@
             <div class="mb-2 titulo-limpieza">LIMPIEZA Y SANITIZACIÓN</div>
             <p class="division-text text-">Nos enfocamos en mantener la limpieza y sanitización en tu hogar, oficina o industria, reconociendo que la presencia de gérmenes puede afectar tu salud y tu entorno.</p>
             <div class="d-flex justify-content-between align-content-center mt-3">
-              <a routerLink="/limpieza">
-                <img src="assets/img/website/iconos/arrow-narrow-right-limpieza.svg" class="img-fluid">
-              </a>
-              <a routerLink="/limpieza">
-                <img src="assets/img/website/iconos/ECOVITALI_Division_Limpieza.svg" width="70px" class="img-fluid">
-              </a>
+              <img src="assets/img/website/iconos/arrow-narrow-right-limpieza.svg" class="img-fluid">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Limpieza.svg" width="70px" class="img-fluid">
             </div>
           </div>
         </div>
@@ -102,12 +94,8 @@
             <div class="mb-2 titulo-jardines">PRADOS Y JARDINES</div>
             <p class="division-text">Ofrecemos servicios integrales de jardinería, desde el diseño hasta el mantenimiento, con personal capacitado para garantizar un entorno exterior certificado para hogares y empresas.</p>
             <div class="d-flex justify-content-between align-content-center mt-3">
-              <a routerLink="/jardines">
-                <img src="assets/img/website/iconos/arrow-narrow-right-prados.svg" class="img-fluid">
-              </a>
-              <a routerLink="/jardines">
-                <img src="assets/img/website/iconos/ECOVITALI_Division_Prados_Jardines.svg" width="70px" class="img-fluid">
-              </a>
+              <img src="assets/img/website/iconos/arrow-narrow-right-prados.svg" class="img-fluid">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Prados_Jardines.svg" width="70px" class="img-fluid">
             </div>
           </div>
         </div>
@@ -122,12 +110,8 @@
             <div class="mb-2 titulo-desinfeccion">DESINFECCION DE AMBIENTES</div>
             <p class="division-text">Garantizamos ambientes libres de virus y bacterias. Contamos con personal calificado y certificado para brindar el servicio profesional de Desinfección.</p><br>
             <div class="d-flex justify-content-between align-content-center mt-3">
-              <a routerLink="/desinfeccion">
-                <img src="assets/img/website/iconos/arrow-narrow-right-desinfeccion.svg" class="img-fluid">
-              </a>
-              <a routerLink="/desinfeccion">
-                <img src="assets/img/website/iconos/ECOVITALI_Division_Desinfeccion.svg" width="70px" class="img-fluid">
-              </a>
+              <img src="assets/img/website/iconos/arrow-narrow-right-desinfeccion.svg" class="img-fluid">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Desinfeccion.svg" width="70px" class="img-fluid">
             </div>
           </div>
         </div>
@@ -135,39 +119,35 @@
     </div>
     <!--================= SEGURIDAD Y CONTROL =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-      <div class="division-container">
-        <img src="assets/img/website/seguridad.webp" class="division-img" alt="Seguridad y Control">
-        <div class="px-3 pt-3">
-          <div class="mb-2 titulo-seguridad">SEGURIDAD Y CONTROL</div>
-          <p class="division-text">Proporcionamos servicios de protección privada y guardianía para la seguridad en urbanizaciones, centros comerciales e Industrias garantizando protección en todo momento.</p>
-          <div class="d-flex justify-content-between align-content-center mt-3">
-            <a routerLink="#">
+      <a routerLink="/servicios">
+        <div class="division-container" (click)="seleccionarDivision('seguridad')">
+          <img src="assets/img/website/seguridad.webp" class="division-img" alt="Seguridad y Control">
+          <div class="px-3 pt-3">
+            <div class="mb-2 titulo-seguridad">SEGURIDAD Y CONTROL</div>
+            <p class="division-text">Proporcionamos servicios de protección privada y guardianía para la seguridad en urbanizaciones, centros comerciales e Industrias garantizando protección en todo momento.</p>
+            <div class="d-flex justify-content-between align-content-center mt-3">
               <img src="assets/img/website/iconos/arrow-narrow-right-seguridad.svg" class="img-fluid">
-            </a>
-            <a routerLink="#">
               <img src="assets/img/website/iconos/ECOVITALI_Division_Seguridad.svg" width="70px" class="img-fluid">
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
     <!--================= EQUIPOS CONTRA INCENDIOS =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-      <div class="division-container">
-        <img src="assets/img/website/equipos-incendios.webp" class="division-img" alt="Control de Plagas">
-        <div class="px-3 pt-3">
-          <div class="mb-2 titulo-equipos_contraincendios">EQUIPOS CONTRA INCENDIOS</div>
-          <p class="division-text">Aseguramos tu tranquilidad ofreciendo extintores contra incendios. Protege tu hogar o negocio con equipos de alta calidad, cumpliendo normativas de seguridad para prevenir riesgos.</p>
-          <div class="d-flex justify-content-between align-content-center mt-3">
-            <a routerLink="#">
+      <a routerLink="/servicios">
+        <div class="division-container" (click)="seleccionarDivision('equipos-incendios')">
+          <img src="assets/img/website/equipos-incendios.webp" class="division-img" alt="Control de Plagas">
+          <div class="px-3 pt-3">
+            <div class="mb-2 titulo-equipos_contraincendios">EQUIPOS CONTRA INCENDIOS</div>
+            <p class="division-text">Aseguramos tu tranquilidad ofreciendo extintores contra incendios. Protege tu hogar o negocio con equipos de alta calidad, cumpliendo normativas de seguridad para prevenir riesgos.</p>
+            <div class="d-flex justify-content-between align-content-center mt-3">
               <img src="assets/img/website/iconos/arrow-narrow-right-equipos-incendios.svg" class="img-fluid">
-            </a>
-            <a routerLink="#">
               <img src="assets/img/website/iconos/ECOVITALI_Division_Equipos_contraincendios.svg" width="70px" class="img-fluid">
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
     <div class="d-flex justify-content-center mb-5 mt-5">
       <div class="custom-btn-section" (click)="verMas = !verMas">
@@ -177,60 +157,53 @@
     </div>
     <!--================= CLIMATIZACION =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100" *ngIf="verMas" [ngClass]="{'fadeIn': verMas, 'show': verMas}">
-      <div class="division-container">
-        <img src="assets/img/website/climatizacion.webp" class="division-img" alt="Control de Plagas">
-        <div class="px-3 pt-3">
-          <div class="mb-2 titulo-climatizacion">CLIMATIZACIÓN</div>
-          <p class="division-text">Garantizamos ambientes frescos y óptimos, con atención profesional para mantener tus sistemas de climatización en perfecto estado.</p><br>
-          <div class="d-flex justify-content-between align-content-center mt-3">
-            <a routerLink="#">
+      <a routerLink="/servicios">
+        <div class="division-container" (click)="seleccionarDivision('climatizacion')">
+          <img src="assets/img/website/climatizacion.webp" class="division-img" alt="Control de Plagas">
+          <div class="px-3 pt-3">
+            <div class="mb-2 titulo-climatizacion">CLIMATIZACIÓN</div>
+            <p class="division-text">Garantizamos ambientes frescos y óptimos, con atención profesional para mantener tus sistemas de climatización en perfecto estado.</p><br>
+            <div class="d-flex justify-content-between align-content-center mt-3">
               <img src="assets/img/website/iconos/arrow-narrow-right-climatizacion.svg" class="img-fluid">
-            </a>
-            <a routerLink="#">
               <img src="assets/img/website/iconos/ECOVITALI_Division_Climatizacion.svg" width="70px" class="img-fluid">
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
     <!--================= REPARACION Y MANTENIMIENTO =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300" *ngIf="verMas" [ngClass]="{'fadeIn': verMas, 'show': verMas}">
-      <div class="division-container">
-        <img src="assets/img/website/mantenimiento-reparacion.webp" class="division-img" alt="Control de Plagas">
-        <div class="px-3 pt-3">
-          <div class="mb-2 titulo-reparacion">REPARACIÓN Y MANTENIMIENTO</div>
-          <p class="division-text">Resolvemos problemas y cuidamos tus espacios. Reparación y mantenimiento para hogares y oficinas con atención profesional.</p><br>
-          <div class="d-flex justify-content-between align-content-center mt-3">
-            <a routerLink="#">
+      <a routerLink="/servicios">
+        <div class="division-container" (click)="seleccionarDivision('mantenimiento-reparacion')">
+          <img src="assets/img/website/mantenimiento-reparacion.webp" class="division-img" alt="Control de Plagas">
+          <div class="px-3 pt-3">
+            <div class="mb-2 titulo-reparacion">REPARACIÓN Y MANTENIMIENTO</div>
+            <p class="division-text">Resolvemos problemas y cuidamos tus espacios. Reparación y mantenimiento para hogares y oficinas con atención profesional.</p><br>
+            <div class="d-flex justify-content-between align-content-center mt-3">
               <img src="assets/img/website/iconos/arrow-narrow-right-reparacion.svg" class="img-fluid">
-            </a>
-            <a routerLink="#">
               <img src="assets/img/website/iconos/ECOVITALI_Division_Reparacion.svg" width="70px" class="img-fluid">
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
     <!--================= ADMINISTRACION DE BIENES Y SERVICIOS =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600" *ngIf="verMas" [ngClass]="{'fadeIn': verMas, 'show': verMas}">
-      <div class="division-container">
-        <img src="assets/img/website/administracion.webp" class="division-img" alt="Control de Plagas">
-        <div class="px-3 pt-3">
-          <div class="mb-2 titulo-administracion_bienes">ADMINISTRACION DE BIENES Y SERVICIOS</div>
-          <p class="division-text">Gestionamos la administración de tus bienes, ya sea edificios, condominios, urbanizaciones o empresas. Garantizamos una gestión eficiente y ordenada de tus propiedades.</p>
-          <div class="d-flex justify-content-between align-content-center mt-3">
-            <a routerLink="#">
+      <a routerLink="/servicios">
+        <div class="division-container" (click)="seleccionarDivision('administracion')">
+          <img src="assets/img/website/administracion.webp" class="division-img" alt="Control de Plagas">
+          <div class="px-3 pt-3">
+            <div class="mb-2 titulo-administracion_bienes">ADMINISTRACION DE BIENES Y SERVICIOS</div>
+            <p class="division-text">Gestionamos la administración de tus bienes, ya sea edificios, condominios, urbanizaciones o empresas. Garantizamos una gestión eficiente y ordenada de tus propiedades.</p>
+            <div class="d-flex justify-content-between align-content-center mt-3">
               <img src="assets/img/website/iconos/arrow-narrow-right-administracion.svg" class="img-fluid">
-            </a>
-            <a routerLink="#">
               <img src="assets/img/website/iconos/ECOVITALI_Division_Administracion.svg" width="70px" class="img-fluid">
-            </a>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
-
 </section>
 <!--=========================================== SECTORES DE TRABAJO ===========================================-->
 <div class="container mb-5" data-aos="fade-up" id="bienestar">

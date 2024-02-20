@@ -1,84 +1,15 @@
-<app-header></app-header>
-<div class="container section-padding">
+<app-header-black></app-header-black>
+<div class="container">
   <div class="row">
-    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
-      <div class="section-medium">
-        <h1 class="fw-semibold text-center text-lg-start">Mejorando su <strong>Salud y Calidad de vida</strong></h1>
-        <p class="text-center text-lg-start">En Ecovitali no exageramos cuando decimos que su bienestar es nuestra prioridad</p>
-        <div class="text-center text-lg-start">
-          <button type="submit" routerLink="/contacto" class="btn-look-more">
-            Ver más
-          </button>
-          <button type="submit" routerLink="/contacto" class="btn-m-v">Misión y Visión</button>
-        </div>
-      </div>
+    <div class="col-12 col-md-7 col-lg-7 mt-3 d-flex flex-column justify-content-center align-content-center align-items-center">
+      <h1 class="fw-semibold text-center text-lg-start">Esta división no está disponible en tu región por el momento.</h1>
+      <h5>Serás redirigido a la página anterior en {{ counter }} segundos, o puedes regresar a la página anterior dando click en:</h5><button class="m-3 btn btn-dark" (click)="goBack()">Volver</button>
     </div>
-    <div class="col-12 col-md-9 col-lg-6 col-xl-6 text-center mx-auto">
-      <div class="img-supervisores img-fluid float-xl-end" alt="Supervisores-Ecovitali"></div>
+    <div class="col-12 col-md-5 col-lg-5 align-content-end justify-content-end d-flex img-bkg p-0">
+      <img class="img-fluid" [src]="divisionImage" alt="Imagen de la división">
     </div>
   </div>
 </div>
-<section >
-  <div class="container section-padding">
-    <div class="row">
-      <div class="col-12 text-center">
-        <div class="btn-servicios">Puntos claves de</div>
-        <h2 class="fw-semibold">Nuestro Servicio</h2>
-        <p class="mb-3">Comprometidos con la calidad y excelencia</p>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row text-center text-sm-center text-lg-start text-xl-start">
-      <div class="col-12 col-md-12 col-lg-4 col-xl-5">
-        <ul class="list-unstyled list-points">
-          <img src="./assets/img/website/inspeccion.svg" class="svg-icon">
-          <li class="mt-2 mb-5"><b>Inspección y Prevención</b>
-            <br>Inspeccionamos los puntos críticos y sus riesgos, permitiéndonos tomar acciones preventivas o
-            correctivas, eficaces y eficientes.
-          </li>
-          <img src="./assets/img/website/estructura.svg" class="svg-icon">
-          <li class="mb-5"><b>Estructura y Conocimiento</b> <br>Diseñamos el plan de acción en conjunto con la mejor
-            tecnología disponible y el respaldo científico actualizado.</li>
-          <img src="./assets/img/website/equipo.svg" class="svg-icon">
-          <li class="mb-5"><b>Equipo y tecnología</b> <br>Con el uso de herramientas digitales y un equipo altamente
-            capacitado, garantizamos el seguimiento del servicio y resultados.</li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-12 col-lg-8 col-xl-7">
-        <div class="container-services img-fluid text-center float-xl-end">
-          <div class="serv-colum-1">
-            <div class="serv-1"></div>
-            <div class="serv-2"></div>
-          </div>
-          <div class="serv-colum-2">
-            <div class="serv-3"></div>
-            <div class="serv-4"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="img-garantia img-fluid">
 
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title">Título de la tarjeta</h3>
-              <p class="card-text">Contenido de la tarjeta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                laborum!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-</section>

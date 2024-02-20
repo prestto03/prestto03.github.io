@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CorreoService {
-  private apiUrl = 'http://localhost:3005'; // URL DEL SERVIDOR BACKEND
+  private apiUrl = 'https://enviocorreo-production.up.railway.app'; // URL DEL SERVIDOR BACKEND
 
   constructor(private http: HttpClient) {}
 

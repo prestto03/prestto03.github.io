@@ -41,141 +41,34 @@
   border: 10px solid transparent;
 }
 
-/* MARGIN DE LA SECCIÓN DE SUPERVISORES */
-.section-medium {
-  margin-top: 250px;
+img {
+  border-radius: 50%;
 }
 
-@media (max-width: 900px) {
-  .section-medium {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .section-medium {
-    margin-top: 0;
-  }
-}
-
-.img-supervisores {
-  background: url('src/assets/img/website/portada.webp');
-  width: 500px;
-  height: 700px;
-  border-radius: 6px;
+.img-bkg {
   background-size: cover;
+  height: 70vh;
+  position: relative;
+  border-radius: 50%;
   margin-top: 20px;
   background-position: center;
+  background-color: rgba(20, 28, 36, 0.5); /* Color de fondo oscuro con transparencia */
 }
 
-/* .svg-icon {
-  filter: invert(1);
-} */
-
-.container-services {
-  width: 620px;
-  height: 600px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center ;
-  align-items: center;
-  overflow: hidden;
-  background-size: contain;
+.img-bkg::after {
+  content: "Próximamente...";
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(20, 28, 36, 0.7); /* Color de fondo oscuro con transparencia */
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  animation: fadeInOut 1.5s infinite alternate;
 }
 
-.serv-colum1,
-.serv-colum2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  width: 280px;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-
-.serv-colum2 {
-  align-items: end;
-}
-
-.serv-1,
-.serv-2,
-.serv-3,
-.serv-4 {
-  width: 280px;
-  border-radius: 15px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  overflow: hidden;
-  margin: 16px;
-}
-
-.serv-1,
-.serv-4 {
-  height: 332px;
-  background: url("src/assets/img/website/andres.webp");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.serv-2 {
-  height: 198px;
-  background: url("src/assets/img/website/andres.webp");
-
-}
-
-.serv-3 {
-  height: 198px;
-  background: url("src/assets/img/website/andres.webp");
-  background-repeat: no-repeat;
-}
-
-.serv-4 {
-  height: 332px;
-  background: url("src/assets/img/website/andres.webp");
-}
-
-.card {
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-}
-
-.card-content {
-  position: relative;
-}
-
-.card-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.card-text {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.carousel-inner {
-  width: 80%;
-  height: auto;
-
-}
-
-
-.carousel-item {
-  animation: expand 10s infinite alternate ease-in-out;
-}
-
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1);
-  }
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

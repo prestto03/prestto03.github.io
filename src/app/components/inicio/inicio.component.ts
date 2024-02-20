@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import * as AOS from 'aos';
+import { DivisionesService } from 'src/app/services/assets/divisiones.service';
 
 @Component({
   selector: 'app-inicio',
@@ -11,6 +12,7 @@ import * as AOS from 'aos';
 })
 
 export class InicioComponent implements OnInit  {
+  divisionImage: string = '';
 
   getState(outlet: RouterOutlet): string {
     return outlet.activatedRouteData['animation'];
@@ -18,11 +20,16 @@ export class InicioComponent implements OnInit  {
 
   verMas: boolean = false;
 
-  constructor() {}
+  constructor(private divisionesService: DivisionesService) {}
+
+  seleccionarDivision(id:string):void {
+    this.divisionesService.establecerDivisionSeleccionada(id);
+  }
 
   ngOnInit() {
     AOS.init();
     window.addEventListener('load', () => AOS.refresh());
+    this.divisionImage = 'assets/img/default-image.jpg';
   }
 
   scrollToSection(sectionId: string) {

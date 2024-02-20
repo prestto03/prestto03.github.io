@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SectoresComponent } from './components/sectores/sectores.component';
 import { PlagasComponent } from './pages/plagas/index/plagas.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -26,7 +25,6 @@ import { EmpresarialComponent } from './components/empresarial/empresarial.compo
 import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { Header2Component } from './components/header2/header2.component';
-import { PreloaderComponent } from './components/preloader/preloader.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
 import { CardComponentComponent } from './components/card-component/card-component.component';
 import { JardineriaComponent } from './pages/jardineria/index/jardineria.component';
@@ -59,13 +57,13 @@ import { TratamientoTermitasComponent } from './pages/plagas/tratamiento-termita
 import { TratamientoEspecialComponent } from './pages/plagas/tratamiento-especial/tratamiento-especial.component';
 import { TrabajaNosotrosComponent } from './pages/trabaja-nosotros/trabaja-nosotros.component';
 import { TerminosCondicionesComponent } from './pages/terminos-condiciones/terminos-condiciones.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SectoresComponent,
     PlagasComponent,
     FooterComponent,
     TratamientosComponent,
@@ -80,7 +78,6 @@ import { TerminosCondicionesComponent } from './pages/terminos-condiciones/termi
     PreguntasFrecuentesComponent,
     InicioComponent,
     Header2Component,
-    PreloaderComponent,
     RuedaComponent,
     CardComponentComponent,
     JardineriaComponent,
@@ -114,7 +111,8 @@ import { TerminosCondicionesComponent } from './pages/terminos-condiciones/termi
     TratamientoEspecialComponent,
     TrabajaNosotrosComponent,
     PreguntasFrecuentesComponent,
-    TerminosCondicionesComponent
+    TerminosCondicionesComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

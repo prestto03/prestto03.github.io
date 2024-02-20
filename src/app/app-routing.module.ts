@@ -1,7 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TratamientosComponent } from './components/tratamientos/tratamientos.component';
-import { SectoresComponent } from './components/sectores/sectores.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
 import { PlagasComponent } from './pages/plagas/index/plagas.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
@@ -37,6 +36,8 @@ import { OtrosSectoresComponent } from './pages/sectores/otros-sectores/otros-se
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FarmaciasComponent } from './pages/sectores/farmacias/farmacias.component';
 import { TerminosCondicionesComponent } from './pages/terminos-condiciones/terminos-condiciones.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch:'full' },
@@ -44,7 +45,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'tratamientos', component: TratamientosComponent},
-  { path: 'sectores', component: SectoresComponent},
   { path: 'procesos', component: ProcesosComponent },
   { path: 'plagas', component: PlagasComponent },
   { path: 'nosotros', component: NosotrosComponent },
@@ -78,8 +78,9 @@ const routes: Routes = [
   { path: 'trabaja-con-nosotros', component: TrabajaNosotrosComponent },
   { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent },
   { path: 'terminos-y-condiciones', component: TerminosCondicionesComponent },
+  { path: '404', component: NotFoundComponent },
 
-  { path: '**', component: InicioComponent}
+  { path: '**', redirectTo: '404' }
   // { path: '**', component: PagenotfoundComponent}
 
 ];
