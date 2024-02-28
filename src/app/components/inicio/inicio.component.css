@@ -170,28 +170,6 @@
   height: 300px;
 }
 
-/* Estilo del contenedor principal */
-.tecnologia {
-  position: relative;
-  padding: 100px 0;
-  background-image: url('../../../assets/img/website/supervisor.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  background-attachment: fixed;
-}
-/* Capa oscura */
-.tecnologia::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 /* Estilo del contenido encima de la imagen de fondo */
 .content {
   position: relative;

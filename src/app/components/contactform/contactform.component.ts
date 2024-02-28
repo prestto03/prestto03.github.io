@@ -9,7 +9,7 @@ import { CorreoService } from 'src/app/services/mails/correo.service';
   styleUrls: ['./contactform.component.css'],
 })
 export class ContactformComponent {
-  @Input() imagenContacto = 'assets/img/website/contacto-plagas.webp';
+  @Input() imagenContacto = 'assets/img/website/contacto-plagas.jpg';
   @Input() botonColor: string | undefined;
   @Input() divisionEmpresarial: string = '';
 
@@ -37,15 +37,44 @@ export class ContactformComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
-      this.httpService.enviarCorreo({ ...this.contactForm.value, divisionEmpresarial: this.divisionEmpresarial}).subscribe(
-        (resp) => {
-          console.log('Correo Enviado con Éxito:', resp);
-        },
-        (error) => {
-          console.error('Error al Enviar el correo:', error);
-        }
-      );
-      this.showSuccessAlert();
+      let correoEndpoint = '';
+      let templatePath = '';
+
+      // Determina el endpoint de correo según la división empresarial
+      switch (this.divisionEmpresarial) {
+        case 'plagas':
+          correoEndpoint = 'plagas';
+          templatePath = 'correo-plagas.ejs'; // Nombre del archivo de plantilla para plagas
+          break;
+        case 'limpieza':
+          correoEndpoint = 'limpieza';
+          templatePath = 'correo-limpieza.ejs'; // Nombre del archivo de plantilla para limpieza
+          break;
+        case 'jardineria':
+          correoEndpoint = 'jardineria';
+          templatePath = 'correo-jardineria.ejs'; // Nombre del archivo de plantilla para limpieza
+          break;
+        case 'desinfeccion':
+          correoEndpoint = 'desinfeccion';
+          templatePath = 'correo-desinfeccion.ejs'; // Nombre del archivo de plantilla para limpieza
+          break;
+        // Agrega casos para otras divisiones empresariales si es necesario
+        default:
+          console.log('División empresarial no válida');
+          return;
+      }
+
+      // Ahora pasamos la división empresarial y el nombre del archivo de plantilla
+      this.httpService.enviarCorreo(correoEndpoint, { ...this.contactForm.value, divisionEmpresarial: this.divisionEmpresarial, templatePath })
+        .subscribe(
+          (resp) => {
+            console.log('Correo Enviado con Éxito:', resp);
+            this.showSuccessAlert();
+          },
+          (error) => {
+            console.error('Error al Enviar el correo:', error);
+          }
+        );
     }
   }
 

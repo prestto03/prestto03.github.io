@@ -134,11 +134,22 @@ span {
   color: #ffffff; /* Color del texto */
 }
 
+.img-jardines {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: url(src/assets/img/website/jardineria-calidad.png) center/cover no-repeat;
+}
+
 .banner-jardineria2 {
   width: 100%;
   height: 30em;
-  background: url(src/assets/img/website/banner-jardineria2.webp) center/cover no-repeat;
+  background: url(src/assets/img/website/banner-jardineria2.png) center/cover no-repeat;
   position: relative;
+}
+
+::placeholder {
+  color: #fff;
 }
 
 .img-jardines-container {
@@ -148,13 +159,6 @@ span {
   max-width: 100%;
   padding: 0;
   overflow: hidden;
-}
-
-.img-jardines {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  background: url(src/assets/img/website/jardineria-calidad.webp) center/cover no-repeat;
 }
 
 .checks-innovacion {

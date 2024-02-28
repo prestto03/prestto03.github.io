@@ -1,7 +1,7 @@
 .garantia {
   position: relative;
   min-height: 500px;
-  background: url(src/assets/img/website/garantia.webp) center/cover no-repeat;
+  background: url(src/assets/img/website/garantia.jpg) center/cover no-repeat;
   border-radius: 10px;
   z-index: 1;
   display: flex;

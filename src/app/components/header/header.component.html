@@ -3,9 +3,9 @@
     <nav [ngClass]="{'navbar-colored': isNavbarColored}" class="navbar navbar-expand-lg shadow-lg">
       <div class="container">
         <a routerLink="/inicio" class="navbar-brand">
-          <img *ngIf="isTextColored; else logoLight" src="assets/img/website/Logo-Ecovitali-Gris.webp" class="logo img-fluid" alt="Ecovitali Dark">
+          <img *ngIf="isTextColored; else logoLight" loading="lazy" src="assets/img/website/iconos/Logo-Ecovitali-Negro.svg" class="logo img-fluid" alt="Ecovitali Dark">
           <ng-template #logoLight>
-            <img src="assets/img/website/Logo-Ecovitali-Blanco.webp" class="logo img-fluid" alt="Ecovitali Light">
+            <img loading="lazy" src="assets/img/website/iconos/Logo-Ecovitali-Gris.svg" class="logo img-fluid" alt="Ecovitali Light">
           </ng-template>
         </a>
 
