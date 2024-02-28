@@ -60,7 +60,7 @@ export class ContactformComponent {
           break;
         // Agrega casos para otras divisiones empresariales si es necesario
         default:
-          console.log('División empresarial no válida');
+          // console.log('División empresarial no válida');
           return;
       }
 
@@ -68,11 +68,11 @@ export class ContactformComponent {
       this.httpService.enviarCorreo(correoEndpoint, { ...this.contactForm.value, divisionEmpresarial: this.divisionEmpresarial, templatePath })
         .subscribe(
           (resp) => {
-            console.log('Correo Enviado con Éxito:', resp);
+            // console.log('Correo Enviado con Éxito:', resp);
             this.showSuccessAlert();
           },
           (error) => {
-            console.error('Error al Enviar el correo:', error);
+            // console.error('Error al Enviar el correo:', error);
           }
         );
     }

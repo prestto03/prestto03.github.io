@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="col-lg-5 col-12 d-flex justify-content-center">
-      <img src="assets/img/website/contacto.png" class="img-fluid img-contacto" alt="Imagen de contacto">
+      <img loading="lazy" src="assets/img/website/contacto.png" class="img-fluid img-contacto" alt="Imagen de contacto">
     </div>
   </div>
 </div>
@@ -18,21 +18,21 @@
 <div class="container py-5">
   <div class="row justify-content-center">
     <div class="card p-3">
-      <img src="assets/img/website/iconos/Telefono.svg" class="img-fluid img-icon" alt="Línea Directa Ecovitali">
+      <img loading="lazy" src="assets/img/website/iconos/Telefono.svg" class="img-fluid img-icon" alt="Línea Directa Ecovitali">
       <div class="ms-3 d-flex flex-column justify-content-center">
         <p class="fw-bold">Línea Directa</p>
         <p class="fw-semibold">(04)-6005464</p>
       </div>
     </div>
     <a href="mailto:info@ecovitali.net" target="_blank" class="card p-3">
-      <img src="assets/img/website/iconos/Mails.svg" class="img-fluid img-icon" alt="Correo Electrónico Ecovitali">
+      <img loading="lazy" src="assets/img/website/iconos/Mails.svg" class="img-fluid img-icon" alt="Correo Electrónico Ecovitali">
       <div class="ms-3 d-flex flex-column justify-content-center">
         <p class="fw-bold">Correo Electrónico</p>
         <p class="fw-semibold">info@ecovitali.net</p>
       </div>
     </a>
     <a href="https://wa.me/+593992852299" target="_blank" class="card p-3">
-      <img src="assets/img/website/iconos/Whatsapp.svg" class="img-fluid img-icon" alt="WhatsApp Ecovitali">
+      <img loading="lazy" src="assets/img/website/iconos/Whatsapp.svg" class="img-fluid img-icon" alt="WhatsApp Ecovitali">
       <div class="ms-3 d-flex flex-column justify-content-center">
         <p class="fw-bold">WhatsApp</p>
         <p class="fw-semibold">0992852299</p>
@@ -49,7 +49,6 @@
         <button type="button" class="btn btn-secondary" (click)="seleccionarFormulario('2')" [class.active]="formularioSeleccionado === '2'">Atención Proveedores</button>
         <button type="button" class="btn btn-secondary" (click)="seleccionarFormulario('3')" [class.active]="formularioSeleccionado === '3'">Responsabilidad Social y Empresarial</button>
       </div>
-
       <!-- FORMULARIO ATENCION AL CLIENTE -->
       <div *ngIf="formularioSeleccionado === '1'">
         <form [formGroup]="formData1" (ngSubmit)="onSubmitForm1()" data-aos="fade-right">
@@ -58,7 +57,7 @@
               <p class="text-center fw-semibold mb-3">En ECOVITALI queremos atender tus necesidades de la mejor forma posible. Ponemos a tu consideración nuestra plataforma de servicio en línea.
               </p>
               <div class="d-flex justify-content-center">
-                <img src="assets/img/website/atencion-al-cliente.webp" class="img-fluid p-3" alt="Imagen de formulario">
+                <img loading="lazy" src="assets/img/website/atencion-al-cliente.png" class="img-fluid p-3" alt="Imagen de formulario">
               </div>
               <div class="d-flex justify-content-center mt-4">
                 <p class="bienestar-btn">Su bienestar es nuestra prioridad</p>
@@ -105,7 +104,6 @@
           </div>
         </form>
       </div>
-
       <!-- FORMULARIO ATENCION A PROVEEDORES -->
       <div *ngIf="formularioSeleccionado === '2'">
         <form [formGroup]="formData2" (ngSubmit)="onSubmitForm2()" data-aos="fade-right">
@@ -116,7 +114,7 @@
                 manera posible.
               </p>
               <div class="d-flex justify-content-center">
-                <img src="assets/img/website/Proveedores.webp" class="img-fluid p-3" alt="Imagen de formulario">
+                <img loading="lazy" src="assets/img/website/Proveedores.png" class="img-fluid p-3" alt="Imagen de formulario">
               </div>
               <div class="d-flex justify-content-center mt-4">
                 <p class="bienestar-btn">Nuestros asociados de negocios son parte de nuestra fortaleza</p>
@@ -171,7 +169,7 @@
               <p class="text-center fw-semibold mb-3">Si usted representa a una fundación u organización social y gustaría contar con nuestros planes de responsabilidad social empresarial, le agradecemos nos envíe su información.
               </p>
               <div class="d-flex justify-content-center">
-                <img src="assets/img/website/ResponsabilidadSocial.webp" class="img-fluid p-3" alt="Imagen de formulario">
+                <img loading="lazy" src="assets/img/website/ResponsabilidadSocial.png" class="img-fluid p-3" alt="Imagen de formulario">
               </div>
               <div class="d-flex justify-content-center mt-4">
                 <p class="bienestar-btn">Una información precisa nos permite asistirlo</p>

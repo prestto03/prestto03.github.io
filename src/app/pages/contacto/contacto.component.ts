@@ -47,12 +47,12 @@ export class ContactoComponent {
   onSubmitForm1() {
     if (this.formData1.valid) {
       this.correoService.enviarCorreoAtCliente(this.formData1.value).subscribe(
-        (resp) => {
-          console.log('Mensaje enviado correctamente', resp);
-        },
-        (error) => {
-          console.error('Error al enviar el mensaje', error);
-        }
+        // (resp) => {
+        //   console.log('Mensaje enviado correctamente', resp);
+        // },
+        // (error) => {
+        //   console.error('Error al enviar el mensaje', error);
+        // }
       );
       this.showSuccessAlert();
     }
@@ -61,12 +61,12 @@ export class ContactoComponent {
   onSubmitForm2() {
     if (this.formData2.valid) {
       this.correoService.enviarCorreoAtProveedor(this.formData2.value).subscribe(
-          (resp) => {
-            console.log('Mensaje enviado correctamente', resp);
-          },
-          (error) => {
-            console.error('Error al enviar el mensaje', error);
-          }
+          // (resp) => {
+          //   console.log('Mensaje enviado correctamente', resp);
+          // },
+          // (error) => {
+          //   console.error('Error al enviar el mensaje', error);
+          // }
         );
       this.showSuccessAlert();
     }
@@ -75,12 +75,12 @@ export class ContactoComponent {
   onSubmitForm3() {
     if (this.formData3.valid) {
       this.correoService.enviarCorreoResponsabilidadSocial(this.formData3.value).subscribe(
-          (resp) => {
-            console.log('Mensaje enviado correctamente', resp);
-          },
-          (error) => {
-            console.error('Error al enviar el mensaje', error);
-          }
+          // (resp) => {
+          //   console.log('Mensaje enviado correctamente', resp);
+          // },
+          // (error) => {
+          //   console.error('Error al enviar el mensaje', error);
+          // }
         );
       this.showSuccessAlert();
     }

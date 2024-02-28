@@ -36,7 +36,7 @@ export class TrabajaNosotrosComponent {
     } else {
       this.selectedFileName = '';
     }
-    console.log(this.selectedFileName);
+    // console.log(this.selectedFileName);
   }
 
   getData($event: any): void {
@@ -45,7 +45,7 @@ export class TrabajaNosotrosComponent {
       fileRaw:file,
       fileName:file.name
     }
-    console.log(file)
+    // console.log(file)
   }
 
   onSubmit() {
@@ -60,12 +60,12 @@ export class TrabajaNosotrosComponent {
       formData.append('cv', this.fileTmp.fileRaw, this.fileTmp.fileName);
 
       this.correoService.enviarCorreoTrabajaConNosotros(formData).subscribe(
-        (resp) => {
-          console.log('Formulario válido. Enviar datos:', resp);
-        },
-        (error) => {
-          console.error('Formulario inválido:', error);
-        }
+        // (resp) => {
+        //   console.log('Formulario válido. Enviar datos:', resp);
+        // },
+        // (error) => {
+        //   console.error('Formulario inválido:', error);
+        // }
       );
       this.showSuccessAlert();
     }
