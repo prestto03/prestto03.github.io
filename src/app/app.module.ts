@@ -25,7 +25,6 @@ import { EmpresarialComponent } from './components/empresarial/empresarial.compo
 import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { Header2Component } from './components/header2/header2.component';
-import { RuedaComponent } from './components/rueda/rueda.component';
 import { CardComponentComponent } from './components/card-component/card-component.component';
 import { JardineriaComponent } from './pages/jardineria/index/jardineria.component';
 import { HeaderBlackComponent } from './components/header-black/header-black.component';
@@ -78,7 +77,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     PreguntasFrecuentesComponent,
     InicioComponent,
     Header2Component,
-    RuedaComponent,
     CardComponentComponent,
     JardineriaComponent,
     NosotrosComponent,

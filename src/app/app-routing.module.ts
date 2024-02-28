@@ -14,7 +14,6 @@ import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/pregu
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 import { InicioComponent } from './components/inicio/inicio.component';
-import { RuedaComponent } from './components/rueda/rueda.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { CertificadosComponent } from './components/certificados/certificados.component';
 import { JardineriaComponent } from './pages/jardineria/index/jardineria.component';
@@ -56,7 +55,6 @@ const routes: Routes = [
   { path: 'residencial', component: ResidencialComponent},
   { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent},
   { path: 'certificaciones', component: CertificacionesComponent},
-  { path: 'rueda', component: RuedaComponent},
   { path: 'jardines', component: JardineriaComponent},
   { path: 'desinfeccion', component: DesinfeccionComponent},
   { path: 'certificados', component: CertificadosComponent},
