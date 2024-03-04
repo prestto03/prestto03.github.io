@@ -16,8 +16,9 @@ header {
   padding: 0;
   margin-bottom: 0px;
 }
+
 .colored-background {
-  color: white;
+  color: var(--white-color);
 }
 
 .glassmorphism {
@@ -47,7 +48,6 @@ header {
   margin-right: 0;
   margin-left: 0;
   padding: 16px;
-  color: var(--white-color);
 }
 
 .navbar-nav .nav-link {
@@ -55,12 +55,12 @@ header {
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-normal);
   position: relative;
+  color: var(--white-color);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   background: transparent;
-  color: var(--secondary-color);
 }
 
 .dropdown-menu {
@@ -121,11 +121,10 @@ header {
 
 .custom-list-item {
   list-style: none;
-
 }
 
 /* Custom Button */
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn {
+.navbar-expand-lg .navbar-nav .custom-btn {
   color: var(--custom-btn-bg-color);
   margin-top: 8px;
   padding: 12px 25px;
@@ -142,36 +141,11 @@ header {
   color: var(--primary-color);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+.navbar-expand-lg .navbar-nav .custom-btn:hover,
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
   color: var(--bkg-color);
-}
-
-/* Site Header */
-.site-header {
-  background: var(--secondary-color);
-  position: relative;
-}
-
-.site-header p,
-.site-header p a,
-.site-header .social-icon-link {
-  color: var(--bkg-color);
-  font-size: var(--h6-font-size);
-}
-
-.site-header .social-icon {
-  text-align: right;
-}
-
-.site-header .social-icon-link {
-  background: transparent;
-  width: inherit;
-  height: inherit;
-  line-height: inherit;
-  margin-right: 7px;
 }
 
 /* Responsive */
@@ -255,11 +229,6 @@ header {
 /* Styles for colored navbar */
 .navbar-colored {
   background-color: white !important;
-}
-
-/* Styles for black menu links */
-.black-menu .nav-link {
-  color: black !important;
 }
 
 /* Optional: Styles for your dropdown menu */
