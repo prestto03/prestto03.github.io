@@ -97,8 +97,8 @@ export class TrabajaNosotrosComponent {
       text: 'Hemos recibido tu perfil y te contactaremos pronto para una entrevista.',
       icon: 'success',
       confirmButtonText: 'Aceptar',
-    // }).then(() => {
-    //   this.trabajoForm.reset();
+    }).then(() => {
+      this.trabajoForm.reset();
     });
   }
 }

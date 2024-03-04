@@ -1,4 +1,6 @@
 import { Component, AfterViewInit, ElementRef, Renderer2, HostListener } from '@angular/core';
+import Swal from 'sweetalert2';
+import { CorreoService } from 'src/app/services/mails/correo.service';
 import * as AOS from 'aos';
 declare const bootstrap: any;
 
@@ -8,10 +10,11 @@ declare const bootstrap: any;
   styleUrls: ['./jardineria.component.css']
 })
 export class JardineriaComponent implements AfterViewInit {
+  correoElectronico: string = '';
 
   private currentPopover: any; // Variable para almacenar la instancia del popover actual
 
-  constructor(private el: ElementRef, private renderer: Renderer2) { }
+  constructor(private el: ElementRef, private renderer: Renderer2, private correoService: CorreoService) {}
 
   ngAfterViewInit(): void {
     // Obtén todos los elementos que tienen el atributo data-bs-toggle="popover"
@@ -47,7 +50,7 @@ export class JardineriaComponent implements AfterViewInit {
     }
   }
 
-  // Método para abrir un popover específico
+  // Método para inicializar los tooltips y popovers
   openPopover(popoverIndex: number): void {
     // Obtén todos los elementos que tienen el atributo data-bs-toggle="popover"
     const popoverTriggers = this.el.nativeElement.querySelectorAll('[data-bs-toggle="popover"]');
@@ -73,4 +76,40 @@ export class JardineriaComponent implements AfterViewInit {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+    // Método para guardar el correo de los suscriptores
+    suscribirse() {
+      if (!this.validarCorreoElectronico(this.correoElectronico)) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Correo electrónico inválido',
+          text: 'Por favor ingresa un correo electrónico válido.'
+        });
+        return;
+      }
+
+      this.correoService.enviarCorreoSuscriptores(this.correoElectronico).subscribe(
+        response => {
+          Swal.fire({
+            icon: 'success',
+            title: '¡Suscripción exitosa!',
+            text: 'Gracias por suscribirte.'
+          });
+          // Limpia el input luego de enviar el correo
+          this.correoElectronico = '';
+        },
+        error => {
+          console.error('Error al suscribirse:', error);
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Hubo un error al procesar tu solicitud. Por favor inténtalo de nuevo más tarde.'
+          });
+        }
+      );
+    }
+
+    validarCorreoElectronico(correoElectronico: string): boolean {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correoElectronico);
+    }
 }
