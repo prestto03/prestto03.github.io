@@ -3,9 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import * as AOS from 'aos';
-import { DivisionesService } from 'src/app/services/assets/divisiones.service';
 import { CarouselService } from 'src/app/services/animation/carousel.service';
-
+import { DivisionesService } from 'src/app/services/assets/divisiones.service';
 
 @Component({
   selector: 'app-inicio',
@@ -22,7 +21,12 @@ export class InicioComponent implements OnInit  {
 
   verMas: boolean = false;
 
-  constructor(private divisionesService: DivisionesService, private carouselService: CarouselService) {}
+  constructor(private divisionesService: DivisionesService, private carruselService: CarouselService) {}
+
+  activarSlide(slideIndex: number): void {
+    this.carruselService.seleccionarSlide(slideIndex);
+  }
+
 
   seleccionarDivision(id:string):void {
     this.divisionesService.establecerDivisionSeleccionada(id);
@@ -39,9 +43,5 @@ export class InicioComponent implements OnInit  {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
-
-  onLinkClick(index:number) {
-    this.carouselService.setActiveItem(index);
   }
 }

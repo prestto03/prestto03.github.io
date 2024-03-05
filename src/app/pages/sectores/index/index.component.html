@@ -2,20 +2,20 @@
 <section>
   <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="2"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="3"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="4"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="5"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="6"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="7"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="8"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="9"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="10"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="11"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="12"></li>
-      <li data-bs-target="#carouselWithControls" data-bs-slide-to="13"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 0}" data-bs-target="#carouselWithControls" data-bs-slide-to="0"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 1}" data-bs-target="#carouselWithControls" data-bs-slide-to="1"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 2}" data-bs-target="#carouselWithControls" data-bs-slide-to="2"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 3}" data-bs-target="#carouselWithControls" data-bs-slide-to="3"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 4}" data-bs-target="#carouselWithControls" data-bs-slide-to="4"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 5}" data-bs-target="#carouselWithControls" data-bs-slide-to="5"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 6}" data-bs-target="#carouselWithControls" data-bs-slide-to="6"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 7}" data-bs-target="#carouselWithControls" data-bs-slide-to="7"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 8}" data-bs-target="#carouselWithControls" data-bs-slide-to="8"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 9}" data-bs-target="#carouselWithControls" data-bs-slide-to="9"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 10}" data-bs-target="#carouselWithControls" data-bs-slide-to="10"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 11}" data-bs-target="#carouselWithControls" data-bs-slide-to="11"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 12}" data-bs-target="#carouselWithControls" data-bs-slide-to="12"></li>
+      <li [ngClass]="{'active': slideSeleccionado === 13}" data-bs-target="#carouselWithControls" data-bs-slide-to="13"></li>
     </ol>
     <!--================ PROCESADORES DE ALIMENTOS Y BEBIDAS ================-->
     <div class="carousel-inner">

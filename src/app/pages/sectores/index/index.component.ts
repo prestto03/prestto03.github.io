@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselService } from 'src/app/services/animation/carousel.service';
-import { Subscription } from 'rxjs';
+import  { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-index',
@@ -8,18 +8,14 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./index.component.css'],
 })
 export class IndexComponent implements OnInit {
-  activeItem: number = 0;
-  private activeItemSubscription!: Subscription;
 
-  constructor(private carouselService: CarouselService) { }
+  slideSeleccionado = 0;
 
-  ngOnInit() {
-    this.activeItemSubscription = this.carouselService.getActiveItem().subscribe(index => {
-      this.activeItem = index;
+  constructor(private carruselService: CarouselService) { }
+
+  ngOnInit(): void {
+    this.carruselService.slideSeleccionado$.subscribe((slideIndex: number) => {
+      this.slideSeleccionado = slideIndex;
     });
-  }
-
-  ngOnDestroy() {
-    this.activeItemSubscription.unsubscribe();
   }
 }

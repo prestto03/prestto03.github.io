@@ -17,10 +17,6 @@ header {
   margin-bottom: 0px;
 }
 
-.colored-background {
-  color: var(--white-color);
-}
-
 .glassmorphism {
   background-color: rgba( 255, 255, 255, 0.5 );
 }
@@ -125,7 +121,6 @@ header {
 
 /* Custom Button */
 .navbar-expand-lg .navbar-nav .custom-btn {
-  color: var(--custom-btn-bg-color);
   margin-top: 8px;
   padding: 12px 25px;
 }
@@ -145,7 +140,6 @@ header {
 .custom-border-btn:hover {
   background: var(--custom-btn-bg-hover-color);
   border-color: transparent;
-  color: var(--bkg-color);
 }
 
 /* Responsive */
