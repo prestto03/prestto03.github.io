@@ -1,0 +1,81 @@
+.carousel-inner img {
+  width: auto !important;
+}
+
+/* Estilo para el carrusel */
+.carousel {
+  box-shadow: none;
+  border: none;
+  border-radius: 12px;
+}
+
+.carousel-inner {
+  padding: 1.8rem; /* Espacio interno del carrusel */
+  transition: 0.5s ease-out; /* Transición al hacer hover en el carrusel */
+}
+
+/* Estilo para los indicadores del carrusel (círculos) */
+.carousel-indicators {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Elimina los marcadores de lista predeterminados */
+}
+
+.carousel-indicators li {
+  background-color: #000000 !important; /* Fondo transparente para los indicadores */
+  border-radius: 50% !important; /* Hace que los indicadores sean círculos */
+  width: 10px !important; /* Ancho fijo de los indicadores */
+  height: 10px !important; /* Altura fija de los indicadores */
+  margin: 0 5px; /* Espacio entre los indicadores */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transición suave para el fondo y el borde */
+}
+
+.carousel-indicators li.active {
+  width: 10px !important; /* Ancho fijo de los indicadores */
+  height: 10px !important; /* Altura fija de los indicadores */
+  border-radius: 50% !important;
+  background-color: #028537; /* Color de fondo del indicador activo */
+}
+
+/* Estilo para el texto y el título de cada elemento del carrusel */
+.carousel-inner span {
+  font-weight: bold;
+}
+
+
+/* Efecto del botón al hacer hover en el carrusel */
+.carousel-inner:hover button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+/* Efecto de la línea debajo del título */
+.text-title::after {
+  content: "";
+  position: absolute;
+  bottom: 50px; /* Distancia desde la parte inferior del título */
+  left: 0;
+  width: 20%; /* Ancho de la línea */
+  height: 4px;
+  background-color: #00ab55;
+  transform: scaleX(1); /* Inicialmente la línea está oculta */
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto de la línea al hacer hover en el carrusel */
+.carousel-inner:hover .text-title::after {
+  transform: scaleX(2); /* Cuando se hace hover en el título, la línea se estira */
+  background-color: #00ab55; /* Cambia el color a verde */
+}
+
+#carouselExampleAutoplaying {
+  max-width: 100%; /* Ajusta el ancho máximo según sea necesario */
+  overflow: hidden; /* Oculta el contenido que se desborde */
+}

@@ -36,6 +36,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FarmaciasComponent } from './pages/sectores/farmacias/farmacias.component';
 import { TerminosCondicionesComponent } from './pages/terminos-condiciones/terminos-condiciones.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { IndexComponent } from './pages/sectores/index/index.component';
 
 
 const routes: Routes = [
@@ -77,6 +78,8 @@ const routes: Routes = [
   { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent },
   { path: 'terminos-y-condiciones', component: TerminosCondicionesComponent },
   { path: '404', component: NotFoundComponent },
+  { path: 'sectores', component: IndexComponent },
+
 
   { path: '**', redirectTo: '404' }
   // { path: '**', component: PagenotfoundComponent}

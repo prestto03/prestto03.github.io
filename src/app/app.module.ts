@@ -57,6 +57,7 @@ import { TratamientoEspecialComponent } from './pages/plagas/tratamiento-especia
 import { TrabajaNosotrosComponent } from './pages/trabaja-nosotros/trabaja-nosotros.component';
 import { TerminosCondicionesComponent } from './pages/terminos-condiciones/terminos-condiciones.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { IndexComponent } from './pages/sectores/index/index.component';
 
 
 @NgModule({
@@ -110,7 +111,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     TrabajaNosotrosComponent,
     PreguntasFrecuentesComponent,
     TerminosCondicionesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 .card {
   background: #ffffff;
   border-radius: 16px;
+  border: 3px solid #000;
   padding: 1em;
   display: flex;
   flex-direction: column;
@@ -12,9 +13,36 @@
   margin: 0.6em;
 }
 
+.plan-trabajo {
+  background-color: #C6EFD1 ;
+}
+.mantenimiento {
+  background-color: #F2EDFF;
+}
+.insectos {
+  background-color: #FFEED5;
+}
+.insectos {
+  background-color: #DCFDFF;
+}
+.roedores {
+  background-color: #DCFDFF;
+}
+.limpieza {
+  background-color: #FFE7E7;
+}
+.tratamientos {
+  background-color: #FCFFDB;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
 p {
   font-size: 0.85em;
 }
+
 .pasos-icon {
-  width: 50px;
+  max-width: 60px;
 }
