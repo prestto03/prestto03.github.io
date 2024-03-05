@@ -8,9 +8,9 @@ import { Observable } from 'rxjs';
 })
 
 export class CorreoService {
-  // private apiUrl = 'https://enviocorreo-production.up.railway.app'; // URL DEL SERVIDOR BACKEND
+  private apiUrl = 'https://enviocorreo-production.up.railway.app'; // URL DEL SERVIDOR BACKEND
 
-  private apiUrl = 'http://localhost:3005';
+  // private apiUrl = 'http://localhost:3005';
 
   constructor(private http: HttpClient) {}
 
