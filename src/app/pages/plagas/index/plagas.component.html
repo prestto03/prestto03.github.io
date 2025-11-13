@@ -1,67 +1,200 @@
 <app-header></app-header>
 <section class="video-background" id="portada">
   <div class="container-fluid px-0">
-    <img loading="lazy" src="assets/img/website/banner-plagas.jpg" class="hero" alt="Portada-Ecovitali">
+    <img
+      loading="lazy"
+      src="assets/img/website/banner-plagas.jpg"
+      class="hero"
+      alt="Portada-Ecovitali"
+    />
     <div class="video-background__content" data-aos="fade-up">
-      <img loading="lazy" src="assets/img/website/SVG-Icono-Division-11.svg" class="icon-plagas img-fluid" alt="Control de Plagas"><span class="text-light fw-semibold m-0 mb-3">Control de Plagas</span>
-      <h1 class="text-center text-light">Controlamos las <br>plagas desde la raíz.</h1>
-      <h5 class="text-center text-light fw-normal">Garantizamos soluciones efectivas, <br>brindando entornos  libres de plagas.</h5>
-      <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img loading="lazy" src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
+      <img
+        loading="lazy"
+        src="assets/img/website/SVG-Icono-Division-11.svg"
+        class="icon-plagas img-fluid"
+        alt="Control de Plagas"
+      /><span class="text-light fw-semibold m-0 mb-3">Control de Plagas</span>
+      <h1 class="text-center text-light">
+        Controlamos las <br />plagas desde la raíz.
+      </h1>
+      <h5 class="text-center text-light fw-normal">
+        Garantizamos soluciones efectivas, <br />brindando entornos libres de
+        plagas.
+      </h5>
+      <div
+        (click)="scrollToSection('sectores')"
+        class="custom-btn-section mt-4"
+      >
+        <img loading="lazy" src="assets/img/website/flecha.svg" />Conoce más
+        sobre nuestra división
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section-padding" id="sectores">
-  <div class="container-fluid" style="background: #F0F8F8;">
+  <div class="container-fluid" style="background: #f0f8f8">
     <div class="row p-md-0 p-3">
       <div class="col-md-1"></div>
       <div class="col-md-6 col-12 mt-3">
-        <h1>Trabajamos para <br>tu bienestar</h1>
-        <h4>Nos especializamos en controlar las plagas <br>en entornos profesionales y residenciales</h4>
+        <h1>Trabajamos para <br />tu bienestar</h1>
+        <h4>
+          Nos especializamos en controlar las plagas <br />en entornos
+          profesionales y residenciales
+        </h4>
         <div class="mt-2">
-          <a href="https://api.whatsapp.com/send/?phone=%2B593992852299&text&type=phone_number&app_absent=0" class="btn btn-llama-profesional p-md-3 py-2 px-2 me-2"><img loading="lazy" src="assets/img/website/iconos/call.svg" class="me-3 img-fluid" alt="Llama a un profesional de Ecovitali"><span class="fw-semibold">Llama a un profesional</span></a>
-          <a routerLink="/certificaciones" class="btn btn-contratanos p-md-3 py-2 px-2 my-3"><img loading="lazy" src="assets/img/website/iconos/pregunta.svg" class="me-3 img-fluid" alt="Porqué contratar a Ecovitali"><span class="fw-semibold">¿Por qué Contratarnos?</span></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=%2B593992852299&text&type=phone_number&app_absent=0"
+            class="btn btn-llama-profesional p-md-3 py-2 px-2 me-2"
+            ><img
+              loading="lazy"
+              src="assets/img/website/iconos/call.svg"
+              class="me-3 img-fluid"
+              alt="Llama a un profesional de Ecovitali"
+            /><span class="fw-semibold">Llama a un profesional</span></a
+          >
+          <a
+            routerLink="/certificaciones"
+            class="btn btn-contratanos p-md-3 py-2 px-2 my-3"
+            ><img
+              loading="lazy"
+              src="assets/img/website/iconos/pregunta.svg"
+              class="me-3 img-fluid"
+              alt="Porqué contratar a Ecovitali"
+            /><span class="fw-semibold">¿Por qué Contratarnos?</span></a
+          >
         </div>
         <h4 class="fw-semibold mt-3">Certificados y Avalados</h4>
-        <div class="col-md-5 d-flex flex-wrap justify-content-around align-items-center">
+        <div
+          class="col-md-5 d-flex flex-wrap justify-content-around align-items-center"
+        >
           <!--============ CERTIFICACION ISO-9001 ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Certificación ISO-9001" data-bs-content="Nuestro certificado ISO 9001 2015 cubre todos los aspectos y fases de nuestra empresa, no es parcial o documental, sino que es integral; nuestro sistema de gestion de calidad tiene validaciones internacionales y permite a ECOVITALI ajustarse a los más estrictos procesos de nuestros clientes, volviéndonos los mejores asociados de negocios.">
-            <img loading="lazy" src="assets/img/website/iconos/ISO.svg" class="certificados" alt="Logo Certificación ISO-9001">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="Certificación ISO-9001"
+            data-bs-content="Nuestro certificado ISO 9001 2015 cubre todos los aspectos y fases de nuestra empresa, no es parcial o documental, sino que es integral; nuestro sistema de gestion de calidad tiene validaciones internacionales y permite a ECOVITALI ajustarse a los más estrictos procesos de nuestros clientes, volviéndonos los mejores asociados de negocios."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/ISO.svg"
+              class="certificados"
+              alt="Logo Certificación ISO-9001"
+            />
           </div>
           <!--============ BUSINESS ALLIANCE FOR SECURE ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Business Alliance for Secure" data-bs-content="Somos certificados BASC - Business Alliance for Secure Commerce y como tal formamos parte de una alianza empresarial internacional basada en el comercio seguro en cooperación con otros asociados, gobiernos y organismos internacionales. En ECOVITALI  no decimos que somos honestos sino que lo certificamos.">
-            <img loading="lazy" src="assets/img/website/iconos/BASC.svg" class="certificados" alt="Logo Business Alliance for Secure">
+          <!--============   <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="Business Alliance for Secure"
+            data-bs-content="Somos certificados BASC - Business Alliance for Secure Commerce y como tal formamos parte de una alianza empresarial internacional basada en el comercio seguro en cooperación con otros asociados, gobiernos y organismos internacionales. En ECOVITALI  no decimos que somos honestos sino que lo certificamos."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/BASC.svg"
+              class="certificados"
+              alt="Logo Business Alliance for Secure"
+            />
           </div>
+          ============-->
         </div>
-        <div class="col-md-12 d-flex flex-wrap justify-content-around align-items-center">
+        <div
+          class="col-md-12 d-flex flex-wrap justify-content-around align-items-center"
+        >
           <!--============ MINISTERIO DE SALUD PUBLICA ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Ministerio de Salud Pública" data-bs-content="Nuestro acuerdo social y compromiso por ser los mejores se sustenta con nuestra responsabilidad adquirida por los permisos otorgados por el Ministerio de Salud Pública del Ecuador.">
-            <img loading="lazy" src="assets/img/website/iconos/MSP.svg" class="certificados" alt="Logo Ministerio de Salud Pública">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="Ministerio de Salud Pública"
+            data-bs-content="Nuestro acuerdo social y compromiso por ser los mejores se sustenta con nuestra responsabilidad adquirida por los permisos otorgados por el Ministerio de Salud Pública del Ecuador."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/MSP.svg"
+              class="certificados"
+              alt="Logo Ministerio de Salud Pública"
+            />
           </div>
           <!--============ ASOCIAACIÓN ECUATORIOANA DE CONTROL DE PLAGAS ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Asociación Ecuatoriana de Control de Plagas" data-bs-content="Somos miembros activos de AEUCPU - Asociación Ecuatoriana de Controladores de Plagas Urbanas, evidenciando que no somos solo una marca de prestigio sino también validada por los agentes de mercado locales.">
-            <img loading="lazy" src="assets/img/website/iconos/AECPU.svg" class="certificados" alt="Logo Asociación Ecuatoriana de Control de Plagas">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="Asociación Ecuatoriana de Control de Plagas"
+            data-bs-content="Somos miembros activos de AEUCPU - Asociación Ecuatoriana de Controladores de Plagas Urbanas, evidenciando que no somos solo una marca de prestigio sino también validada por los agentes de mercado locales."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/AECPU.svg"
+              class="certificados"
+              alt="Logo Asociación Ecuatoriana de Control de Plagas"
+            />
           </div>
           <!--============ NATIONAL PEST MANAGEMENT ASSOCIATION ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="National Pest Management Association" data-bs-content="Somos miembros activos internacionales de NPMA - National Pest Management Association, lo que nos permite mantenernos en constante capacitación y actualización sobre los desarrollos y avances del control de plagas a nivel internacional, que junto a alianzas privadas de la industria nos permite presumir de ser la mejor oferta del mercado.">
-            <img loading="lazy" src="assets/img/website/iconos/NPMA.svg" class="certificados" alt="Logo National Pest Management Association">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="National Pest Management Association"
+            data-bs-content="Somos miembros activos internacionales de NPMA - National Pest Management Association, lo que nos permite mantenernos en constante capacitación y actualización sobre los desarrollos y avances del control de plagas a nivel internacional, que junto a alianzas privadas de la industria nos permite presumir de ser la mejor oferta del mercado."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/NPMA.svg"
+              class="certificados"
+              alt="Logo National Pest Management Association"
+            />
           </div>
           <!--============ AMERICAN MOSQUITO CONTROL ASSOCIATION ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="American Mosquito Control Association" data-bs-content="Somos miembros activos internaciones de AMCA - American Mosquito Control Association, lo que nos permite mantenernos en constante capacitacón y actualización sobre los desarrollos y avances del control de los misquitos a nivel internacional, que junto a alianzas privadas de la industria nos permite presumir de ser la mejor oferta del mercado.">
-            <img loading="lazy" src="assets/img/website/iconos/AMCA.svg" class="amca" alt="Logo American Mosquito Control Association">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="American Mosquito Control Association"
+            data-bs-content="Somos miembros activos internaciones de AMCA - American Mosquito Control Association, lo que nos permite mantenernos en constante capacitacón y actualización sobre los desarrollos y avances del control de los misquitos a nivel internacional, que junto a alianzas privadas de la industria nos permite presumir de ser la mejor oferta del mercado."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/AMCA.svg"
+              class="amca"
+              alt="Logo American Mosquito Control Association"
+            />
           </div>
           <!--============ MINISTERIO DEL AMBIENTE ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Ministerio del Ambiente" data-bs-content="Nuestro compromiso con el medio ambiente es real y como tal contamos con nuestros permisos ambientales emitidos por el Ministerio del Ambiente del Ecuador que certifican nuestro compromiso con este y la sociedad.">
-            <img loading="lazy" src="assets/img/website/iconos/MINISTERIO-DEL-AMBIENTE.svg" class="certificados" alt="Logo Ministerio del Ambiente">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="Ministerio del Ambiente"
+            data-bs-content="Nuestro compromiso con el medio ambiente es real y como tal contamos con nuestros permisos ambientales emitidos por el Ministerio del Ambiente del Ecuador que certifican nuestro compromiso con este y la sociedad."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/MINISTERIO-DEL-AMBIENTE.svg"
+              class="certificados"
+              alt="Logo Ministerio del Ambiente"
+            />
           </div>
           <!--============ AGROCALIDAD ============-->
-          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="AGROCALIDAD" data-bs-content="Somos una empresa responsable con la sociedad, la normativa y las leyes, por ello operamos gracias a nuestra licencia profesional como aplicadores terrestres emitida por AGROCALIDAD, institución pública adscrita al ministerio de agricultura y Ganadería.">
-            <img loading="lazy" src="assets/img/website/iconos/AGROCALIDAD.svg" class="certificados" alt="Logo AGROCALIDAD">
+          <div
+            data-bs-toggle="popover"
+            data-bs-tigger="click"
+            data-bs-title="AGROCALIDAD"
+            data-bs-content="Somos una empresa responsable con la sociedad, la normativa y las leyes, por ello operamos gracias a nuestra licencia profesional como aplicadores terrestres emitida por AGROCALIDAD, institución pública adscrita al ministerio de agricultura y Ganadería."
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/AGROCALIDAD.svg"
+              class="certificados"
+              alt="Logo AGROCALIDAD"
+            />
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-12 d-none d-sm-flex justify-content-end mt-lg-0 mt-4 px-0">
-        <img loading="lazy" src="assets/img/website/banner2-plagas.jpg" class="img-fluid">
+      <div
+        class="col-lg-5 col-12 d-none d-sm-flex justify-content-end mt-lg-0 mt-4 px-0"
+      >
+        <img
+          loading="lazy"
+          src="assets/img/website/banner2-plagas.jpg"
+          class="img-fluid"
+        />
       </div>
     </div>
   </div>
@@ -74,44 +207,95 @@
       <div class="col-12 text-center">
         <div class="btn-servicios">Puntos claves de</div>
         <h2 class="fw-semibold">Nuestro Servicio</h2>
-        <p class="mb-2 text-center">Comprometidos con la calidad y excelencia</p>
+        <p class="mb-2 text-center">
+          Comprometidos con la calidad y excelencia
+        </p>
       </div>
     </div>
     <div class="row text-center text-sm-center text-lg-start text-xl-start">
       <div class="col-12 col-md-12 col-lg-7">
         <div class="mt-4 container d-flex flex-wrap">
           <div class="container-items col-md-5 p-3 m-3" data-aos="fade-up">
-            <img loading="lazy" src="assets/img/website/iconos/inspeccion.svg" class="img-svg">
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/inspeccion.svg"
+              class="img-svg"
+            />
             <h5 class="mt-2 fw-bold">Inspección y Prevención</h5>
-              <p>Inspeccionamos los puntos críticos y sus riesgos, permitiéndonos tomar acciones preventivas o
-              correctivas, eficaces y eficientes.</p>
+            <p>
+              Inspeccionamos los puntos críticos y sus riesgos, permitiéndonos
+              tomar acciones preventivas o correctivas, eficaces y eficientes.
+            </p>
           </div>
-          <div class="container-items col-md-5 p-3 m-3" style="top: 100px;" data-aos="fade-up">
-            <img loading="lazy" src="assets/img/website/iconos/equipos-insumos.svg" class="img-svg">
+          <div
+            class="container-items col-md-5 p-3 m-3"
+            style="top: 100px"
+            data-aos="fade-up"
+          >
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/equipos-insumos.svg"
+              class="img-svg"
+            />
             <h5 class="mt-2 fw-bold">Equipos e Insumos</h5>
-            <p>Diseñamos el plan de acción en conjunto con la mejor tecnología disponible y el respaldo científico actualizado.</p>
+            <p>
+              Diseñamos el plan de acción en conjunto con la mejor tecnología
+              disponible y el respaldo científico actualizado.
+            </p>
           </div>
           <div class="container-items col-md-5 p-3 m-3" data-aos="fade-up">
-            <img loading="lazy" src="assets/img/website/iconos/tecnologia.svg" class="img-svg">
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/tecnologia.svg"
+              class="img-svg"
+            />
             <h5 class="mt-2 fw-bold">Equipo y tecnología</h5>
-            <p>Con el uso de herramientas digitales y un equipo altamente
-              capacitado, garantizamos el seguimiento del servicio y resultados. </p>
+            <p>
+              Con el uso de herramientas digitales y un equipo altamente
+              capacitado, garantizamos el seguimiento del servicio y resultados.
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-12 col-lg-5 col-xl-5 d-flex justify-content-lg-end justify-content-center">
+      <div
+        class="col-12 col-md-12 col-lg-5 col-xl-5 d-flex justify-content-lg-end justify-content-center"
+      >
         <div class="container-services text-center float-xl-end">
           <div class="serv-colum-1">
-            <div data-aos="fade-up"><img loading="lazy" src="assets/img/website/andres.jpg" class="serv-1 img-fluid m-md-2 p-1"
-                alt="Inspección"></div>
-            <div data-aos="fade-up"><img loading="lazy" src="assets/img/website/servicio1.jpg" class="serv-2 img-fluid m-md-2 p-1"
-                alt="Inspección"></div>
+            <div data-aos="fade-up">
+              <img
+                loading="lazy"
+                src="assets/img/website/andres.jpg"
+                class="serv-1 img-fluid m-md-2 p-1"
+                alt="Inspección"
+              />
+            </div>
+            <div data-aos="fade-up">
+              <img
+                loading="lazy"
+                src="assets/img/website/servicio1.jpg"
+                class="serv-2 img-fluid m-md-2 p-1"
+                alt="Inspección"
+              />
+            </div>
           </div>
           <div class="serv-colum-2">
-            <div data-aos="fade-up"><img loading="lazy" src="assets/img/website/servicio2.jpg" class="serv-3 img-fluid m-md-2 p-1"
-                alt="Inspección"></div>
-            <div data-aos="fade-up"><img loading="lazy" src="assets/img/website/servicio3.jpg" class="serv-4 img-fluid m-md-2 p-1"
-                alt="Inspección"></div>
+            <div data-aos="fade-up">
+              <img
+                loading="lazy"
+                src="assets/img/website/servicio2.jpg"
+                class="serv-3 img-fluid m-md-2 p-1"
+                alt="Inspección"
+              />
+            </div>
+            <div data-aos="fade-up">
+              <img
+                loading="lazy"
+                src="assets/img/website/servicio3.jpg"
+                class="serv-4 img-fluid m-md-2 p-1"
+                alt="Inspección"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -122,64 +306,136 @@
 <!--=========================================== CAROUSEL EXPERTOS EN CONTROL DE PLAGAS =============================-->
 <section class="section-padding container">
   <div class="row align-items-center justify-content-around" data-aos="fade-up">
-    <h2 class="text-center mb-3 mb-md-4 fw-bold">Somos Expertos en Control de Plagas</h2>
+    <h2 class="text-center mb-3 mb-md-4 fw-bold">
+      Somos Expertos en Control de Plagas
+    </h2>
     <div class="col-lg-4 col-md-4 col-12 p-2 order-1 order-md-0">
-      <img loading="lazy" src="assets/img/website/operador-ecovitali.jpg" class="img-fluid" alt="Operador de la división de Control de Plagas de Ecovitali">
+      <img
+        loading="lazy"
+        src="assets/img/website/operador-ecovitali.jpg"
+        class="img-fluid"
+        alt="Operador de la división de Control de Plagas de Ecovitali"
+      />
     </div>
     <div class="col-md-7 col-12 order-0 order-md-1 mb-3">
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <!-- Controles del Carrusel -->
-      <ol class="carousel-indicators">
-        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></li>
-        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></li>
-      </ol>
-      <!-- Contenido del Carrusel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <!-- Contenido del primer elemento del carrusel -->
-          <img loading="lazy" src="assets/img/website/iconos/entrenamiento-certificado.svg" class="img-fluid">
-          <span><b>Entrenamiento Certificado</b></span>
-          <p class="text-justify">Nuestros técnicos certificados están comprometidos con la excelencia, respaldados por agencias de control y sistemas certificados a nivel nacional e internacional. Impulsamos esfuerzos empresariales hacia la excelencia con conciencia ambiental y social.</p>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Controles del Carrusel -->
+        <ol class="carousel-indicators">
+          <li
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="1"
+          ></li>
+          <li
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="2"
+          ></li>
+        </ol>
+        <!-- Contenido del Carrusel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Contenido del primer elemento del carrusel -->
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/entrenamiento-certificado.svg"
+              class="img-fluid"
+            />
+            <span><b>Entrenamiento Certificado</b></span>
+            <p class="text-justify">
+              Nuestros técnicos certificados están comprometidos con la
+              excelencia, respaldados por agencias de control y sistemas
+              certificados a nivel nacional e internacional. Impulsamos
+              esfuerzos empresariales hacia la excelencia con conciencia
+              ambiental y social.
+            </p>
           </div>
           <div class="carousel-item">
             <!-- Contenido del segundo elemento del carrusel -->
-            <img loading="lazy" src="assets/img/website/iconos/entrenamiento-continuo.svg" class="img-fluid">
+            <img
+              loading="lazy"
+              src="assets/img/website/iconos/entrenamiento-continuo.svg"
+              class="img-fluid"
+            />
             <span><b>Entrenamiento Continuo</b></span>
-            <p class="text-justify">Nos destacamos por nuestro compromiso continuo con el aprendizaje. Utilizamos desde herramientas digitales avanzadas hasta prácticas presenciales, asegurando la satisfacción del cliente como parte esencial de nuestro plan de mejora constante.</p>
+            <p class="text-justify">
+              Nos destacamos por nuestro compromiso continuo con el aprendizaje.
+              Utilizamos desde herramientas digitales avanzadas hasta prácticas
+              presenciales, asegurando la satisfacción del cliente como parte
+              esencial de nuestro plan de mejora constante.
+            </p>
           </div>
           <div class="carousel-item">
             <!-- Contenido del tercer elemento del carrusel -->
-            <img loading="lazy" src="assets/img//website/iconos/entornos-controlados.svg" class="img-fluid">
+            <img
+              loading="lazy"
+              src="assets/img//website/iconos/entornos-controlados.svg"
+              class="img-fluid"
+            />
             <span><b>Entrenamiento en Entornos Controlados</b></span>
-            <p class="text-justify">Optamos por un sistema de entrenamiento más allá de clases teóricas. Capacitamos a nuestros técnicos en entornos controlados, desde lo básico hasta técnicas avanzadas, detectando deficiencias a tiempo y fortaleciendo criterios para asegurar un servicio profesional y resultados exitosos.</p>
-            </div>
+            <p class="text-justify">
+              Optamos por un sistema de entrenamiento más allá de clases
+              teóricas. Capacitamos a nuestros técnicos en entornos controlados,
+              desde lo básico hasta técnicas avanzadas, detectando deficiencias
+              a tiempo y fortaleciendo criterios para asegurar un servicio
+              profesional y resultados exitosos.
+            </p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
 
-<section class="section-padding" style="background-color: #F9F8F8;">
+<section class="section-padding" style="background-color: #f9f8f8">
   <div class="container mb-4">
     <div class="row align-items-center p-3" data-aos="fade-up">
       <div class="col-lg-7 col-md-7 col-sm-12 col-12 text-justify pe-md-5">
-        <h2 class="fw-bold">¿QUÉ ES EL MANEJO <br>INTEGRAL DE PLAGAS</h2>
-        <p class="mb-5">Es un enfoque proactivo que anticipa y aborda las plagas y sus impactos en procesos empresariales, con
-          acciones correctivas basadas en un plan estratégico y coherente siendo eficaz a mediano y largo plazo.</p>
+        <h2 class="fw-bold">¿QUÉ ES EL MANEJO <br />INTEGRAL DE PLAGAS</h2>
+        <p class="mb-5">
+          Es un enfoque proactivo que anticipa y aborda las plagas y sus
+          impactos en procesos empresariales, con acciones correctivas basadas
+          en un plan estratégico y coherente siendo eficaz a mediano y largo
+          plazo.
+        </p>
         <div class="btn-manejo-integral px-3 py-2 align-items-center">
-          <img loading="lazy" src="assets/img/website/iconos/elipse.svg" class="pe-2"><span class="fw-semibold">Monitoreamos y Validamos</span>
+          <img
+            loading="lazy"
+            src="assets/img/website/iconos/elipse.svg"
+            class="pe-2"
+          /><span class="fw-semibold">Monitoreamos y Validamos</span>
         </div>
-        <p class="ps-5 my-2">Garantizamos seguimiento y control integral de plagas gracias a nuestro estricto protocolo de
-          calidad y seguridad.</p>
+        <p class="ps-5 my-2">
+          Garantizamos seguimiento y control integral de plagas gracias a
+          nuestro estricto protocolo de calidad y seguridad.
+        </p>
 
         <div class="btn-manejo-integral px-3 py-2 mt-4 align-items-center">
-          <img loading="lazy" src="assets/img/website/iconos/elipse.svg" class="pe-2"><span class="fw-semibold">Reportamos y hacemos seguimiento</span>
+          <img
+            loading="lazy"
+            src="assets/img/website/iconos/elipse.svg"
+            class="pe-2"
+          /><span class="fw-semibold">Reportamos y hacemos seguimiento</span>
         </div>
-        <p class="ps-5 my-2">Generamos informes detallados desde la identificación inicial hasta nuevos monitoreos, asegurando una barrera protectora efectiva contra plagas.</p>
+        <p class="ps-5 my-2">
+          Generamos informes detallados desde la identificación inicial hasta
+          nuevos monitoreos, asegurando una barrera protectora efectiva contra
+          plagas.
+        </p>
       </div>
       <div class="col-lg-5 col-md-5 col-sm-1 col-12 text-justify">
-        <img loading="lazy" src="assets/img/website/manejo-integral-plagas.jpg" class="img-fluid ps-3">
+        <img
+          loading="lazy"
+          src="assets/img/website/manejo-integral-plagas.jpg"
+          class="img-fluid ps-3"
+        />
       </div>
     </div>
   </div>
@@ -194,10 +450,16 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="d-flex justify-content-center">
-              <img loading="lazy" src="assets/img/website/iconos/desinsectacion.svg" class="img-fluid card-img-top">
+              <img
+                loading="lazy"
+                src="assets/img/website/iconos/desinsectacion.svg"
+                class="img-fluid card-img-top"
+              />
             </div>
             <h5 class="card-title fw-bold text-center">Desinsectación</h5>
-            <p class="card-text text-center p-cards">Controlamos todos los insectos rastreos o voladores.</p>
+            <p class="card-text text-center p-cards">
+              Controlamos todos los insectos rastreos o voladores.
+            </p>
           </div>
         </div>
       </div>
@@ -205,10 +467,17 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="d-flex justify-content-center">
-              <img loading="lazy" src="assets/img/website/iconos/desratizacion.svg" class="img-fluid card-img-top">
+              <img
+                loading="lazy"
+                src="assets/img/website/iconos/desratizacion.svg"
+                class="img-fluid card-img-top"
+              />
             </div>
             <h5 class="card-title fw-bold text-center">Desratización</h5>
-            <p class="card-text text-center p-cards">Controlamos los roedores mediante recursos físicos, mecánicos o químicos.</p>
+            <p class="card-text text-center p-cards">
+              Controlamos los roedores mediante recursos físicos, mecánicos o
+              químicos.
+            </p>
           </div>
         </div>
       </div>
@@ -216,10 +485,17 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="d-flex justify-content-center">
-              <img loading="lazy" src="assets/img/website/iconos/granos.svg" class="img-fluid card-img-top justify-content-center">
+              <img
+                loading="lazy"
+                src="assets/img/website/iconos/granos.svg"
+                class="img-fluid card-img-top justify-content-center"
+              />
             </div>
             <h5 class="card-title fw-bold text-center">Granos</h5>
-            <p class="card-text text-center p-cards">Tratamos los vectores que amenazan a granos y sistemas de almacenaje.</p>
+            <p class="card-text text-center p-cards">
+              Tratamos los vectores que amenazan a granos y sistemas de
+              almacenaje.
+            </p>
           </div>
         </div>
       </div>
@@ -227,10 +503,16 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="d-flex justify-content-center">
-              <img loading="lazy" src="assets/img/website/iconos/termitas.svg" class="img-fluid card-img-top">
+              <img
+                loading="lazy"
+                src="assets/img/website/iconos/termitas.svg"
+                class="img-fluid card-img-top"
+              />
             </div>
             <h5 class="card-title fw-bold text-center">Termitas</h5>
-            <p class="card-text text-center p-cards">Tratamientos correctivos y preventivos.</p>
+            <p class="card-text text-center p-cards">
+              Tratamientos correctivos y preventivos.
+            </p>
           </div>
         </div>
       </div>
@@ -238,17 +520,42 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="d-flex justify-content-center">
-              <img loading="lazy" src="assets/img/website/iconos/muercielagos.svg" class="img-fluid card-img-top">
+              <img
+                loading="lazy"
+                src="assets/img/website/iconos/muercielagos.svg"
+                class="img-fluid card-img-top"
+              />
             </div>
             <h5 class="card-title fw-bold text-center">Murciélagos</h5>
-            <p class="card-text text-center p-cards">Ejecutamos sistemas de exclusión para evitar su presencia.</p>
+            <p class="card-text text-center p-cards">
+              Ejecutamos sistemas de exclusión para evitar su presencia.
+            </p>
           </div>
         </div>
       </div>
     </div>
     <div class="row justify-content-center mt-5" data-aos="fade-up">
-      <a href="https://api.whatsapp.com/send/?phone=%2B593992852299&text&type=phone_number&app_absent=0" class="btn-llama-profesional p-md-3 py-2 px-2 my-3 me-2"><img loading="lazy" src="assets/img/website/iconos/call.svg" class="me-3 img-fluid" alt="Llama a un profesional de Ecovitali"><span class="fw-semibold">Llama a un profesional</span></a>
-      <button (click)="scrollToSection('contacto')" class="btn-contratanos p-md-3 py-2 px-2 my-3"><img loading="lazy" src="assets/img/website/iconos/mensaje.svg" class="me-3 img-fluid" alt="Porqué contratar a Ecovitali"><span class="fw-semibold">Envíanos un mensaje</span></button>
+      <a
+        href="https://api.whatsapp.com/send/?phone=%2B593992852299&text&type=phone_number&app_absent=0"
+        class="btn-llama-profesional p-md-3 py-2 px-2 my-3 me-2"
+        ><img
+          loading="lazy"
+          src="assets/img/website/iconos/call.svg"
+          class="me-3 img-fluid"
+          alt="Llama a un profesional de Ecovitali"
+        /><span class="fw-semibold">Llama a un profesional</span></a
+      >
+      <button
+        (click)="scrollToSection('contacto')"
+        class="btn-contratanos p-md-3 py-2 px-2 my-3"
+      >
+        <img
+          loading="lazy"
+          src="assets/img/website/iconos/mensaje.svg"
+          class="me-3 img-fluid"
+          alt="Porqué contratar a Ecovitali"
+        /><span class="fw-semibold">Envíanos un mensaje</span>
+      </button>
     </div>
   </div>
 </section>
@@ -258,31 +565,52 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5">
-        <img loading="lazy" src="assets/img/website/operador2-ecovitali.jpg" class="img-fluid">
+        <img
+          loading="lazy"
+          src="assets/img/website/operador2-ecovitali.jpg"
+          class="img-fluid"
+        />
       </div>
       <div class="col-md-7">
-        <h3 class="fw-bold" style="color: #55BDB3;">INNOVAMOS EL</h3>
-        <h3 class="fw-bold" style="color: #0F2435;">CONTROL DE PLAGAS</h3>
+        <h3 class="fw-bold" style="color: #55bdb3">INNOVAMOS EL</h3>
+        <h3 class="fw-bold" style="color: #0f2435">CONTROL DE PLAGAS</h3>
         <h3>PARA AYUDAR A NUESTROS CLIENTES</h3>
-        <p>Ahora ofrecemos la opción de tener a uno de nuestros operadores de planta en tu establecimiento, brindando un servicio continuo y eficiente. ¡Más que un control, es una asociación para un entorno libre de plagas.</p>
+        <p>
+          Ahora ofrecemos la opción de tener a uno de nuestros operadores de
+          planta en tu establecimiento, brindando un servicio continuo y
+          eficiente. ¡Más que un control, es una asociación para un entorno
+          libre de plagas.
+        </p>
         <div class="container container-innovacion d-flex">
           <!-- Primera fila -->
-          <div class="row ">
+          <div class="row">
             <div class="col-md-11 col-12 m-md-3 m-0">
               <div class="checks-innovacion">
-                <img loading="lazy" src="assets/img/website/iconos/check-innovar.svg" class="img-fluid pe-2">
+                <img
+                  loading="lazy"
+                  src="assets/img/website/iconos/check-innovar.svg"
+                  class="img-fluid pe-2"
+                />
                 <span class="fw-semibold">Servicio Continuo</span>
               </div>
             </div>
             <div class="col-md-11 col-12 m-md-3 m-0">
               <div class="checks-innovacion">
-                <img loading="lazy" src="assets/img/website/iconos/check-innovar.svg" class="img-fluid pe-2">
+                <img
+                  loading="lazy"
+                  src="assets/img/website/iconos/check-innovar.svg"
+                  class="img-fluid pe-2"
+                />
                 <span class="fw-semibold">Monitoreo Constante</span>
               </div>
             </div>
             <div class="col-md-11 col-12 m-md-3 m-0">
               <div class="checks-innovacion">
-                <img loading="lazy" src="assets/img/website/iconos/check-innovar.svg" class="img-fluid pe-2">
+                <img
+                  loading="lazy"
+                  src="assets/img/website/iconos/check-innovar.svg"
+                  class="img-fluid pe-2"
+                />
                 <span class="fw-semibold">Optimización de Recursos</span>
               </div>
             </div>
@@ -292,19 +620,31 @@
           <div class="row">
             <div class="col-md-11 col-12 m-md-3 m-0">
               <div class="checks-innovacion">
-                <img loading="lazy" src="assets/img/website/iconos/check-innovar.svg" class="img-fluid pe-2">
+                <img
+                  loading="lazy"
+                  src="assets/img/website/iconos/check-innovar.svg"
+                  class="img-fluid pe-2"
+                />
                 <span class="fw-semibold">Comunicación Directa</span>
               </div>
             </div>
             <div class="col-md-11 col-12 m-md-3 m-0">
               <div class="checks-innovacion">
-                <img loading="lazy" src="assets/img/website/iconos/check-innovar.svg" class="img-fluid pe-2">
+                <img
+                  loading="lazy"
+                  src="assets/img/website/iconos/check-innovar.svg"
+                  class="img-fluid pe-2"
+                />
                 <span class="fw-semibold">Soluciones Personalizadas</span>
               </div>
             </div>
             <div class="col-md-11 col-12 m-md-3 m-0">
               <div class="checks-innovacion">
-                <img loading="lazy" src="assets/img/website/iconos/check-innovar.svg" class="img-fluid pe-2">
+                <img
+                  loading="lazy"
+                  src="assets/img/website/iconos/check-innovar.svg"
+                  class="img-fluid pe-2"
+                />
                 <span class="fw-semibold">Atención Emergente</span>
               </div>
             </div>
@@ -318,7 +658,10 @@
 
 <!--=========================================== CONTACTO ===========================================-->
 <section class="pt-5" data-aos="fade-up" data-aos-delay="100">
-  <app-contactform divisionEmpresarial="plagas" botonColor="#212529"></app-contactform>
+  <app-contactform
+    divisionEmpresarial="plagas"
+    botonColor="#212529"
+  ></app-contactform>
 </section>
 
 <div class="mt-5">
